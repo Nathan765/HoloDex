@@ -6,5 +6,5 @@
 //
 
 protocol NetworkService {
-//    func request(target: T, completion: @escaping (Result<Response, MoyaError>) -> Void)
+    func fetchCardDetails(cardId: String, select: [String], completion: @escaping (Result<CardDetailsAPIResponse, Error>) -> Void)
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CardDetailsNetworkServiceImpl {
+class CardDetailsNetworkServiceImpl: NetworkService {
     
     let provider = MoyaNetworkServiceImpl<PokemonTcgApi>()
     
