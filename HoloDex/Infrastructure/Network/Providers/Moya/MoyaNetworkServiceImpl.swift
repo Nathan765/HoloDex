@@ -21,7 +21,7 @@ class MoyaNetworkServiceImpl<T: TargetType> {
             case .success:
                 let response = try! result.get()
                 print("response: \(response)")
-            case .failure: break
+            case .failure:
                 print("error")
             }
         }
