@@ -12,6 +12,7 @@
 		088EA7A42CEFDE8700CE9D9A /* PokemonTcgApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088EA7A32CEFDE7200CE9D9A /* PokemonTcgApi.swift */; };
 		08A48AEC2CF0E80C00BE9594 /* CardDetailsNetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A48AEB2CF0E7FE00BE9594 /* CardDetailsNetworkServiceImpl.swift */; };
 		2CFCD73BBCF533F885C9241A /* Pods_HoloDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC5BBDB6135976EDE1F9B69 /* Pods_HoloDex.framework */; };
+		D88107C72CFCAA99001A8119 /* TestShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = D88107C62CFCAA99001A8119 /* TestShader.metal */; };
 		D88410A82CEFB41A00D031EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88410A52CEFB41A00D031EA /* ContentView.swift */; };
 		D88410A92CEFB41A00D031EA /* HoloDexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88410A62CEFB41A00D031EA /* HoloDexApp.swift */; };
 		D88410AA2CEFB41A00D031EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88410A22CEFB41A00D031EA /* Preview Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		08A48AEB2CF0E7FE00BE9594 /* CardDetailsNetworkServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsNetworkServiceImpl.swift; sourceTree = "<group>"; };
 		2AC5BBDB6135976EDE1F9B69 /* Pods_HoloDex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoloDex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC095F3F5D3EEA0E361BE5C /* Pods-HoloDex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoloDex.debug.xcconfig"; path = "Target Support Files/Pods-HoloDex/Pods-HoloDex.debug.xcconfig"; sourceTree = "<group>"; };
+		D88107C62CFCAA99001A8119 /* TestShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TestShader.metal; sourceTree = "<group>"; };
 		D884106D2CEFB05300D031EA /* HoloDex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoloDex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88410A22CEFB41A00D031EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D88410A42CEFB41A00D031EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		088EA7982CEFD8A400CE9D9A /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				D88107C12CFCAA24001A8119 /* Shaders */,
 				088EA7992CEFDA1200CE9D9A /* Network */,
 			);
 			path = Infrastructure;
@@ -137,6 +140,14 @@
 				EE887D2F1AB48002D1261D66 /* Pods-HoloDex.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D88107C12CFCAA24001A8119 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				D88107C62CFCAA99001A8119 /* TestShader.metal */,
+			);
+			path = Shaders;
 			sourceTree = "<group>";
 		};
 		D88410642CEFB05300D031EA = {
@@ -317,6 +328,7 @@
 				08A48AEC2CF0E80C00BE9594 /* CardDetailsNetworkServiceImpl.swift in Sources */,
 				088EA79C2CEFDAC100CE9D9A /* NetworkService.swift in Sources */,
 				088EA7A42CEFDE8700CE9D9A /* PokemonTcgApi.swift in Sources */,
+				D88107C72CFCAA99001A8119 /* TestShader.metal in Sources */,
 				088EA7A12CEFDD4D00CE9D9A /* MoyaNetworkServiceImpl.swift in Sources */,
 				D88410A92CEFB41A00D031EA /* HoloDexApp.swift in Sources */,
 			);
@@ -450,7 +462,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HoloDex/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
@@ -468,8 +481,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nathan.adrien.HoloDex;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nathan.adrien.HoloDex2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -486,7 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HoloDex/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
@@ -506,6 +520,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nathan.adrien.HoloDex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
