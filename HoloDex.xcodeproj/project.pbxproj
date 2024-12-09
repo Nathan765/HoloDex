@@ -40,8 +40,8 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		086807FD2D00F92C0059C404 /* CardDetails */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CardDetails; sourceTree = "<group>"; };
-		086807FE2D00F9470059C404 /* Cards */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Cards; sourceTree = "<group>"; };
+		082044F72D05F6C90096D318 /* Domain */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Domain; sourceTree = "<group>"; };
+		082045002D05F74D0096D318 /* CardsScene */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CardsScene; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +59,9 @@
 		088EA7952CEFD86300CE9D9A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				086807FE2D00F9470059C404 /* Cards */,
-				086807FD2D00F92C0059C404 /* CardDetails */,
+				082045002D05F74D0096D318 /* CardsScene */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		088EA7962CEFD87B00CE9D9A /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Domain;
 			sourceTree = "<group>";
 		};
 		088EA7972CEFD88700CE9D9A /* Data */ = {
@@ -179,7 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				088EA7952CEFD86300CE9D9A /* Presentation */,
-				088EA7962CEFD87B00CE9D9A /* Domain */,
+				082044F72D05F6C90096D318 /* Domain */,
 				088EA7972CEFD88700CE9D9A /* Data */,
 				088EA7982CEFD8A400CE9D9A /* Infrastructure */,
 				D88410A32CEFB41A00D031EA /* Preview Content */,
@@ -225,8 +217,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				086807FD2D00F92C0059C404 /* CardDetails */,
-				086807FE2D00F9470059C404 /* Cards */,
+				082044F72D05F6C90096D318 /* Domain */,
+				082045002D05F74D0096D318 /* CardsScene */,
 			);
 			name = HoloDex;
 			productName = HoloDex;
